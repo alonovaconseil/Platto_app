@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Platto - L'app qui révolutionne ta façon de cuisiner. Découvre des recettes personnalisées, planifie tes repas et fais tes courses en un clic.">
+    <meta name="keywords" content="recettes, cuisine, app, platto, repas, courses, planification">
+    <meta name="author" content="Platto">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Platto - Ta cuisine, réinventée">
+    <meta property="og:description" content="L'app qui révolutionne ta façon de cuisiner. Découvre des recettes personnalisées.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/og-image.png">
+
+    <title>Platto - Ta cuisine, réinventée</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particules flottantes -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🍊</span>
+                <span class="logo-text">Platto</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Fonctionnalités</a>
+                <a href="#how-it-works">Comment ça marche</a>
+                <a href="#download" class="nav-cta">Télécharger</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how-it-works">Comment ça marche</a>
+        <a href="#download">Télécharger</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Nouveau : Génération de recettes par IA
+            </div>
+            <h1 class="hero-title">
+                Ta cuisine,<br>
+                <span class="gradient-text">réinventée.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Fini le "qu'est-ce qu'on mange ce soir ?". Platto te propose des recettes sur-mesure, planifie tes repas et génère ta liste de courses. Simple comme bonjour.
+            </p>
+            <div class="hero-cta">
+                <a href="#" class="store-btn app-store">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <div class="store-text">
+                        <span>Télécharger sur</span>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a href="#" class="store-btn google-play">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div class="store-text">
+                        <span>Disponible sur</span>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="50000">0</span>
+                    <span class="stat-label">Utilisateurs actifs</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="10000">0</span>
+                    <span class="stat-label">Recettes disponibles</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4.9" data-decimals="1">0</span>
+                    <span class="stat-label">Note moyenne</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="app-preview">
+                            <div class="app-header">
+                                <span class="app-greeting">Salut, chef ! 👋</span>
+                                <span class="app-title">Qu'est-ce qu'on cuisine ?</span>
+                            </div>
+                            <div class="app-search">
+                                <span>🔍</span>
+                                <span>Rechercher une recette...</span>
+                            </div>
+                            <div class="app-categories">
+                                <span class="category active">🍝 Pâtes</span>
+                                <span class="category">🥗 Salades</span>
+                                <span class="category">🍰 Desserts</span>
+                            </div>
+                            <div class="recipe-card">
+                                <div class="recipe-image">🍝</div>
+                                <div class="recipe-info">
+                                    <span class="recipe-title">Pasta alla Norma</span>
+                                    <span class="recipe-meta">⏱ 25 min · 👤 4 pers</span>
+                                    <div class="recipe-rating">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                            <div class="recipe-card">
+                                <div class="recipe-image">🥘</div>
+                                <div class="recipe-info">
+                                    <span class="recipe-title">Risotto aux champignons</span>
+                                    <span class="recipe-meta">⏱ 35 min · 👤 2 pers</span>
+                                    <div class="recipe-rating">⭐⭐⭐⭐⭐</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-card card-1">
+                    <span class="card-emoji">🥑</span>
+                    <span class="card-text">+5 recettes<br>avec tes ingrédients</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="card-emoji">📝</span>
+                    <span class="card-text">Liste de courses<br>générée !</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="card-emoji">⏰</span>
+                    <span class="card-text">Prêt en<br>20 min</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Fonctionnalités</span>
+                <h2 class="section-title">Tout ce dont tu as besoin<br>pour cuisiner sans prise de tête</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <span>🎯</span>
+                    </div>
+                    <h3>Recettes personnalisées</h3>
+                    <p>Dis-nous ce que tu aimes (et ce que tu détestes), et on s'occupe du reste. L'IA adapte les suggestions à tes goûts.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <span>📅</span>
+                    </div>
+                    <h3>Planification intelligente</h3>
+                    <p>Planifie ta semaine en 2 minutes. On équilibre automatiquement tes repas pour que tu manges varié.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <span>🛒</span>
+                    </div>
+                    <h3>Liste de courses auto</h3>
+                    <p>Ta liste se génère toute seule à partir de tes recettes. Plus jamais d'oubli au supermarché.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <span>🤖</span>
+                    </div>
+                    <h3>Assistant IA</h3>
+                    <p>"J'ai des courgettes et du poulet" → Boom, 10 recettes. L'IA comprend ce que tu as et propose des idées.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <span>👨‍👩‍👧‍👦</span>
+                    </div>
+                    <h3>Mode famille</h3>
+                    <p>Adapte les portions automatiquement. 2 personnes ou 8 ? On recalcule tout pour toi.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <span>🌱</span>
+                    </div>
+                    <h3>Filtres alimentaires</h3>
+                    <p>Végé, sans gluten, sans lactose... Configure une fois, et toutes les recettes sont adaptées.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comment ça marche</span>
+                <h2 class="section-title">3 étapes pour ne plus<br>jamais te prendre la tête</h2>
+            </div>
+            <div class="steps">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Configure tes préférences</h3>
+                        <p>Dis-nous combien vous êtes, ce que tu aimes, tes allergies... On mémorise tout.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="mini-card">
+                            <span>🥦 J'aime</span>
+                            <span>🚫 Allergique aux noix</span>
+                            <span>👨‍👩‍👧 Famille de 3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-left">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Explore & planifie</h3>
+                        <p>Parcours des milliers de recettes ou laisse l'IA te surprendre. Ajoute-les à ton planning.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="mini-card calendar">
+                            <div class="cal-row"><span>Lun</span><span class="cal-meal">🍝</span></div>
+                            <div class="cal-row"><span>Mar</span><span class="cal-meal">🥗</span></div>
+                            <div class="cal-row"><span>Mer</span><span class="cal-meal">🍛</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Cuisine & régale-toi</h3>
+                        <p>Suis les étapes pas à pas, mode mains libres activé. Et voilà, c'est prêt !</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="mini-card cooking">
+                            <span class="cooking-step">Étape 3/5</span>
+                            <span class="cooking-instruction">Fais revenir les oignons 5 min...</span>
+                            <div class="cooking-timer">⏱ 4:32</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">Ils ont adopté Platto</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Franchement, j'ai testé plein d'apps de recettes, mais celle-là c'est la meilleure. La liste de courses auto, c'est game changer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div class="author-info">
+                            <span class="author-name">Marie L.</span>
+                            <span class="author-title">Maman de 2 enfants</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"L'IA qui me propose des recettes avec ce qu'il me reste dans le frigo ? Génial. Plus de gaspillage, plus d'excuses."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TM</div>
+                        <div class="author-info">
+                            <span class="author-name">Thomas M.</span>
+                            <span class="author-title">Étudiant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"En tant que végétarienne, je galérais à trouver des idées variées. Platto m'a réconciliée avec la cuisine !"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SD</div>
+                        <div class="author-info">
+                            <span class="author-name">Sophie D.</span>
+                            <span class="author-title">Designer freelance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="download">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Prêt à révolutionner<br>ta cuisine ?</h2>
+                <p class="cta-subtitle">Rejoins les 50 000+ utilisateurs qui ont dit adieu au "qu'est-ce qu'on mange ?"</p>
+                <div class="cta-buttons">
+                    <a href="#" class="store-btn app-store large">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        <div class="store-text">
+                            <span>Télécharger sur</span>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="store-btn google-play large">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        <div class="store-text">
+                            <span>Disponible sur</span>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+                <p class="cta-note">Gratuit · Pas de pub · Pas de prise de tête</p>
+            </div>
+        </div>
+        <div class="cta-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🍊</span>
+                        <span class="logo-text">Platto</span>
+                    </a>
+                    <p>L'app qui révolutionne ta façon de cuisiner.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produit</h4>
+                        <a href="#features">Fonctionnalités</a>
+                        <a href="#how-it-works">Comment ça marche</a>
+                        <a href="#">Tarifs</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">Recettes</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Légal</h4>
+                        <a href="#">CGU</a>
+                        <a href="#">Confidentialité</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Platto. Fait avec 🧡 pour les gourmands.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
