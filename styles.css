@@ -172,6 +172,24 @@ button {
     z-index: 1001;
 }
 
+/* Logo image sizing to ensure visibility */
+.logo-img {
+    display: block;
+    height: 36px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Mockup images inside phone screens */
+.mockup-img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: var(--shadow-md);
+}
+
 .logo-icon {
     font-size: 28px;
 }
@@ -430,6 +448,19 @@ button {
 }
 
 .store-btn.google-play:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Web app button: semi-transparent and consistent hover */
+.store-btn.web-app {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--white);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.store-btn.web-app:hover {
     background: rgba(255, 255, 255, 0.25);
     transform: translateY(-3px);
     box-shadow: var(--shadow-xl);
@@ -1063,8 +1094,9 @@ button {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 32px;
+    justify-items: end;
 }
 
 .footer-column h4 {
@@ -1252,6 +1284,7 @@ button {
     .footer-links {
         grid-template-columns: 1fr;
         gap: 32px;
+        justify-items: end;
     }
 
     .footer-bottom {
