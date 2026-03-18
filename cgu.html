@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conditions Générales d'Utilisation et Politique de Confidentialité de l'application Platto.">
+    <meta name="author" content="Platto">
+
+    <title>CGU & Confidentialité — Platto</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .legal-hero {
+            padding: 140px 24px 80px;
+            background: var(--gray-900);
+            text-align: center;
+        }
+
+        .legal-hero .section-tag {
+            margin-bottom: 20px;
+        }
+
+        .legal-hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .legal-hero p {
+            font-size: 16px;
+            color: var(--gray-400);
+        }
+
+        .legal-content {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 80px 24px 120px;
+        }
+
+        .legal-toc {
+            background: var(--gray-50);
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 64px;
+        }
+
+        .legal-toc h3 {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gray-500);
+            margin-bottom: 16px;
+        }
+
+        .legal-toc ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .legal-toc ul li a {
+            font-size: 14px;
+            color: var(--orange-500);
+            font-weight: 500;
+            transition: color var(--transition-fast);
+        }
+
+        .legal-toc ul li a:hover {
+            color: var(--orange-600);
+            text-decoration: underline;
+        }
+
+        .legal-section {
+            margin-bottom: 72px;
+        }
+
+        .legal-section-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: 8px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--orange-500);
+        }
+
+        .legal-updated {
+            font-size: 13px;
+            color: var(--gray-400);
+            margin-bottom: 32px;
+        }
+
+        .legal-intro {
+            font-size: 16px;
+            color: var(--gray-700);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            padding: 24px;
+            background: var(--orange-50);
+            border-left: 3px solid var(--orange-500);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        .legal-article {
+            margin-bottom: 36px;
+        }
+
+        .legal-article h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 12px;
+        }
+
+        .legal-article p {
+            font-size: 15px;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .legal-article ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 12px;
+        }
+
+        .legal-article ul li {
+            font-size: 15px;
+            color: var(--gray-600);
+            line-height: 1.8;
+            padding: 6px 0 6px 24px;
+            position: relative;
+        }
+
+        .legal-article ul li::before {
+            content: "•";
+            color: var(--orange-500);
+            font-weight: 700;
+            position: absolute;
+            left: 8px;
+        }
+
+        .legal-divider {
+            height: 1px;
+            background: var(--gray-200);
+            margin: 64px 0;
+        }
+
+        .legal-contact-box {
+            background: var(--gray-900);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            text-align: center;
+            margin-top: 64px;
+        }
+
+        .legal-contact-box h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 12px;
+        }
+
+        .legal-contact-box p {
+            font-size: 15px;
+            color: var(--gray-400);
+            margin-bottom: 20px;
+        }
+
+        .legal-contact-box a {
+            color: var(--orange-400);
+            font-weight: 600;
+            transition: color var(--transition-fast);
+        }
+
+        .legal-contact-box a:hover {
+            color: var(--orange-300);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Logo_Platto.svg" alt="Platto logo" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="index.html#probleme">Le problème</a>
+                <a href="index.html#fonctionnalites">Fonctionnalités</a>
+                <a href="index.html#temoignages">Avis</a>
+                <a href="contact.html">Contact</a>
+                <a href="index.html#download" class="nav-cta">Télécharger</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#probleme">Le problème</a>
+        <a href="index.html#fonctionnalites">Fonctionnalités</a>
+        <a href="index.html#temoignages">Avis</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#download">Télécharger</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="legal-hero">
+        <span class="section-tag">Documents légaux</span>
+        <h1>CGU & Confidentialité</h1>
+        <p>Conditions Générales d'Utilisation et Politique de Confidentialité de l'application Platto.</p>
+    </section>
+
+    <!-- Contenu légal -->
+    <main class="legal-content">
+
+        <!-- Table des matières -->
+        <nav class="legal-toc" aria-label="Table des matières">
+            <h3>Sommaire</h3>
+            <ul>
+                <li><a href="#cgu">Conditions Générales d'Utilisation</a></li>
+                <li><a href="#confidentialite">Politique de Confidentialité</a></li>
+            </ul>
+        </nav>
+
+        <!-- ======================== -->
+        <!-- CGU                      -->
+        <!-- ======================== -->
+        <section class="legal-section" id="cgu">
+            <h2 class="legal-section-title">Conditions Générales d'Utilisation</h2>
+            <p class="legal-updated">Dernière mise à jour : 18 mars 2026</p>
+
+            <p class="legal-intro">
+                Bienvenue sur Platto&nbsp;! Ces Conditions Générales d'Utilisation (ci-après les «&nbsp;CGU&nbsp;») régissent l'accès et l'utilisation de l'application Platto (ci-après «&nbsp;l'Application&nbsp;») éditée par ALONOVA Conseil, immatriculée au RCS de Bordeaux sous le numéro 979&nbsp;626&nbsp;918, dont le siège social est situé au 47 rue Joséphine, 33300 Bordeaux.<br><br>
+                En téléchargeant, accédant ou utilisant l'Application, vous acceptez sans réserve les présentes CGU.
+            </p>
+
+            <div class="legal-article">
+                <h3>1. Objet de l'Application</h3>
+                <p>Platto est une application destinée à faciliter l'organisation de repas entre amis ou proches, en prenant en compte les préférences et contraintes alimentaires des participants.</p>
+                <p>L'Application permet notamment :</p>
+                <ul>
+                    <li>de créer et rejoindre un événement culinaire,</li>
+                    <li>d'indiquer ses goûts, intolérances et allergies,</li>
+                    <li>de générer automatiquement des idées de menus adaptées grâce à l'intelligence artificielle,</li>
+                    <li>de répartir les contributions des invités (apéritifs, boissons, desserts, etc.),</li>
+                    <li>et plus globalement, de renforcer la convivialité autour de la table.</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>2. Accès au service</h3>
+                <p>L'Application est accessible gratuitement via une interface web ou mobile. Certaines fonctionnalités avancées, notamment la génération de menus par intelligence artificielle, sont accessibles via un système de crédits Platto (voir article 5). D'autres fonctionnalités pourront évoluer dans le temps, être restreintes ou rendues payantes, ce dont les utilisateurs seront informés en amont.</p>
+                <p>L'accès nécessite la création d'un compte utilisateur avec une adresse e-mail valide.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>3. Engagements de l'utilisateur</h3>
+                <p>En utilisant l'Application, vous vous engagez à :</p>
+                <ul>
+                    <li>fournir des informations exactes lors de votre inscription (notamment vos préférences alimentaires),</li>
+                    <li>ne pas usurper l'identité d'un tiers,</li>
+                    <li>ne pas utiliser l'Application à des fins frauduleuses, commerciales ou détournées de son objet initial,</li>
+                    <li>respecter les règles de bonne conduite entre utilisateurs,</li>
+                    <li>ne pas porter atteinte aux droits des tiers ou à la sécurité de l'Application.</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>4. Génération de menus par intelligence artificielle</h3>
+                <p>Platto intègre un système de génération automatique de menus via intelligence artificielle (IA). Ce système analyse les profils alimentaires des participants pour proposer des menus adaptés.</p>
+                <p>L'utilisateur est informé que :</p>
+                <ul>
+                    <li>les suggestions générées par l'IA sont indicatives et ne constituent pas un conseil médical ou diététique,</li>
+                    <li>l'Éditeur ne saurait être tenu responsable d'éventuelles erreurs ou omissions dans les menus générés,</li>
+                    <li>l'utilisateur reste seul responsable de ses choix alimentaires et de la vérification des ingrédients,</li>
+                    <li>aucune décision automatisée ayant un impact juridique ou significatif sur l'utilisateur n'est prise sans intervention humaine.</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>5. Système de crédits et paiement</h3>
+                <p>Certaines fonctionnalités de l'Application, notamment la génération de menus par IA, sont accessibles via l'achat de crédits Platto.</p>
+                <p>Les achats de crédits sont traités via RevenueCat, notre prestataire de paiement. En effectuant un achat, vous acceptez également les conditions générales de RevenueCat.</p>
+                <p>Les crédits Platto :</p>
+                <ul>
+                    <li>sont utilisables uniquement au sein de l'Application,</li>
+                    <li>ne sont ni remboursables ni échangeables contre de l'argent,</li>
+                    <li>n'ont pas de date d'expiration sauf indication contraire lors de l'achat.</li>
+                </ul>
+                <p>En cas de problème lors d'un achat, contactez-nous à <a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a>. Nous nous engageons à traiter votre demande dans les meilleurs délais.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>6. Données personnelles</h3>
+                <p>Vos données personnelles sont traitées conformément à notre Politique de Confidentialité (disponible ci-dessous). Vous restez à tout moment maître de vos informations, et pouvez demander leur suppression en nous contactant à <a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a>.</p>
+                <p>Nous nous engageons à ne jamais vendre vos données à des tiers.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>7. Propriété intellectuelle</h3>
+                <p>L'ensemble des contenus présents sur l'Application (textes, visuels, logos, interfaces, algorithmes de suggestion, etc.) est la propriété exclusive de l'Éditeur, sauf mention contraire.</p>
+                <p>Toute reproduction, modification ou exploitation sans autorisation est interdite.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>8. Responsabilité</h3>
+                <p>L'Éditeur met tout en œuvre pour garantir un service fiable, mais ne saurait être tenu responsable :</p>
+                <ul>
+                    <li>en cas d'indisponibilité temporaire du service,</li>
+                    <li>d'éventuelles erreurs dans les suggestions de menus générés par l'IA,</li>
+                    <li>ou d'informations inexactes saisies par les utilisateurs.</li>
+                </ul>
+                <p>L'utilisateur est seul responsable de ses choix alimentaires et de ses achats.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>9. Modification des CGU</h3>
+                <p>L'Éditeur peut être amené à modifier les présentes CGU. Les utilisateurs seront informés de toute mise à jour via l'Application. L'utilisation continue du service vaut acceptation des nouvelles conditions.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>10. Résiliation</h3>
+                <p>Vous pouvez supprimer votre compte à tout moment depuis l'interface de l'Application ou en nous contactant à <a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a>. L'Éditeur se réserve également le droit de suspendre ou supprimer un compte en cas de non-respect des présentes CGU.</p>
+                <p>En cas de suppression du compte, les crédits Platto non utilisés sont définitivement perdus et ne font l'objet d'aucun remboursement.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>11. Droit applicable</h3>
+                <p>Les présentes CGU sont soumises au droit français. En cas de litige, une solution amiable sera privilégiée. À défaut, les tribunaux compétents seront ceux du ressort du siège de l'Éditeur.</p>
+            </div>
+        </section>
+
+        <div class="legal-divider"></div>
+
+        <!-- ======================== -->
+        <!-- POLITIQUE DE CONF.       -->
+        <!-- ======================== -->
+        <section class="legal-section" id="confidentialite">
+            <h2 class="legal-section-title">Politique de Confidentialité</h2>
+            <p class="legal-updated">Dernière mise à jour : 18 mars 2026</p>
+
+            <p class="legal-intro">
+                Chez Platto, nous accordons une importance particulière à la protection de vos données personnelles. La présente politique de confidentialité a pour objectif de vous expliquer de manière claire quelles données nous collectons, comment nous les utilisons, et quels sont vos droits.<br><br>
+                L'application Platto est éditée par ALONOVA Conseil, immatriculée au RCS de Bordeaux sous le numéro 979&nbsp;626&nbsp;918, dont le siège social est situé au 47 rue Joséphine, 33300 Bordeaux.
+            </p>
+
+            <div class="legal-article">
+                <h3>1. Quelles données sont collectées&nbsp;?</h3>
+                <p>Lors de l'utilisation de l'application, nous pouvons collecter les données suivantes :</p>
+                <p><strong>Données de compte</strong></p>
+                <ul>
+                    <li>Adresse e-mail</li>
+                    <li>Prénom, nom (si fournis)</li>
+                    <li>Mot de passe (chiffré, jamais stocké en clair)</li>
+                    <li>Date de naissance (facultative) — utilisée uniquement à des fins de statistiques anonymisées (ex. : calcul de moyenne d'âge des utilisateurs)</li>
+                </ul>
+                <p><strong>Données alimentaires</strong></p>
+                <ul>
+                    <li>Préférences alimentaires (ex. : végétarien, sans gluten)</li>
+                    <li>Allergies, aliments aimés/détestés</li>
+                </ul>
+                <p><strong>Données liées aux événements</strong></p>
+                <ul>
+                    <li>Participation à un événement (nom, date, menu généré, éléments à apporter)</li>
+                    <li>Historique de vos repas organisés ou rejoints</li>
+                </ul>
+                <p><strong>Données liées aux paiements</strong></p>
+                <ul>
+                    <li>Les transactions de crédits Platto sont traitées par RevenueCat. Platto ne stocke aucune donnée bancaire ou de carte de paiement. Seules les informations nécessaires à la gestion de votre abonnement ou de vos achats (identifiant de transaction, statut) sont conservées.</li>
+                </ul>
+                <p><strong>Données techniques</strong></p>
+                <ul>
+                    <li>Type d'appareil, système d'exploitation, version de l'app</li>
+                    <li>Données de navigation anonymisées à des fins statistiques (ex. : temps passé sur un écran)</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>2. À quoi servent ces données&nbsp;?</h3>
+                <p>Nous utilisons vos données uniquement pour :</p>
+                <ul>
+                    <li>Créer et gérer votre compte utilisateur,</li>
+                    <li>Proposer des menus adaptés à vos préférences et à celles de vos invités via notre système d'intelligence artificielle,</li>
+                    <li>Générer des suggestions d'éléments à apporter compatibles avec le menu choisi,</li>
+                    <li>Gérer les achats de crédits Platto et l'accès aux fonctionnalités associées,</li>
+                    <li>Améliorer nos services et notre interface utilisateur,</li>
+                    <li>Vous envoyer des notifications utiles (confirmation d'un événement, rappels, etc.),</li>
+                    <li>Réaliser des analyses internes (statistiques anonymes, dont des statistiques d'âge agrégées).</li>
+                </ul>
+                <p>Aucune de vos données n'est vendue ou cédée à des tiers.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>3. Base légale du traitement</h3>
+                <p>Nous traitons vos données :</p>
+                <ul>
+                    <li>sur la base de votre consentement (ex. : préférences alimentaires, date de naissance facultative),</li>
+                    <li>dans le cadre de l'exécution du contrat qui nous lie (accès à l'app et à ses fonctionnalités, gestion des paiements).</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>4. Où sont stockées vos données&nbsp;?</h3>
+                <p>Vos données sont hébergées en Europe, sur des serveurs sécurisés respectant les standards en matière de sécurité et de confidentialité.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>5. Combien de temps sont-elles conservées&nbsp;?</h3>
+                <p>Vos données sont conservées tant que votre compte est actif. Vous pouvez à tout moment :</p>
+                <ul>
+                    <li>consulter vos données,</li>
+                    <li>les modifier ou les supprimer depuis votre profil,</li>
+                    <li>ou demander la suppression complète de votre compte en nous écrivant à <a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a>.</li>
+                </ul>
+            </div>
+
+            <div class="legal-article">
+                <h3>6. Qui a accès à vos données&nbsp;?</h3>
+                <p>Seuls les membres habilités de l'équipe Platto (développement, support utilisateur) ont accès à vos données, uniquement si nécessaire. Certaines données anonymisées peuvent être utilisées à des fins statistiques.</p>
+                <p>Notre prestataire de paiement RevenueCat accède uniquement aux données nécessaires au traitement des transactions.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>7. Vos droits</h3>
+                <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :</p>
+                <ul>
+                    <li>Droit d'accès à vos données,</li>
+                    <li>Droit de rectification de vos données personnelles,</li>
+                    <li>Droit d'effacement («&nbsp;droit à l'oubli&nbsp;»),</li>
+                    <li>Droit à la portabilité de vos données,</li>
+                    <li>Droit d'opposition et de retrait de votre consentement à tout moment.</li>
+                </ul>
+                <p>Pour exercer l'un de ces droits, contactez-nous à <a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a>. Nous nous engageons à répondre dans un délai de 30 jours.</p>
+                <p>Si vous estimez que le traitement de vos données personnelles n'est pas conforme à la réglementation, vous avez également le droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) : <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--orange-500);font-weight:600;">www.cnil.fr</a>.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>8. Cookies et tracking</h3>
+                <p>L'application mobile n'utilise pas de cookies tiers à des fins publicitaires. Des outils de mesure d'audience anonymisés peuvent être utilisés pour suivre l'usage de l'app, dans le seul but d'améliorer l'expérience utilisateur.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>9. Traitements automatisés</h3>
+                <p>Platto utilise un système d'intelligence artificielle pour générer des suggestions de menus à partir des profils alimentaires des utilisateurs. Ce traitement automatisé n'a pas d'effet juridique ou significatif sur les utilisateurs : il s'agit uniquement de suggestions que l'utilisateur reste libre d'accepter, modifier ou ignorer.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>10. Modifications</h3>
+                <p>Nous pouvons être amenés à modifier cette politique de confidentialité. En cas de changement majeur, nous vous en informerons directement via l'application.</p>
+            </div>
+
+            <div class="legal-article">
+                <h3>11. Contact</h3>
+                <p>Pour toute question ou réclamation liée à vos données personnelles, vous pouvez nous écrire à :</p>
+                <p><a href="mailto:contact@plattoapp.com" style="color:var(--orange-500);font-weight:600;">contact@plattoapp.com</a></p>
+            </div>
+        </section>
+
+        <!-- Encart contact -->
+        <div class="legal-contact-box">
+            <h3>Une question sur vos données&nbsp;?</h3>
+            <p>Notre équipe est disponible pour répondre à toutes vos questions.</p>
+            <a href="mailto:contact@plattoapp.com">contact@plattoapp.com</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="Logo_Platto.svg" alt="Platto logo" class="logo-img">
+                    </a>
+                    <p>Vos repas entre amis, enfin sans friction.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produit</h4>
+                        <a href="index.html#fonctionnalites">Fonctionnalités</a>
+                        <a href="index.html#temoignages">Avis</a>
+                        <a href="index.html#download">Télécharger</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Légal</h4>
+                        <a href="cgu.html">CGU & Confidentialité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Platto. Fait avec 🧡 pour ceux qui aiment recevoir.</p>
+                <div class="social-links">
+                    <!-- Social links removed per request -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
